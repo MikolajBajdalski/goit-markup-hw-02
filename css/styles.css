@@ -1,114 +1,121 @@
+:root {
+  --color-text-hover: #2196f3;
+  --color-gray: #757575;
+  --color-text-primary: #212121;
+  --color-white: #ffffff;
+  --color-lightgray: #f5f4fa;
+  --color-background-footer: #2f303a;
+  --color-studio: #000000;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  color: #212121;
+  color: var(--color-text-primary);
 }
-a {
-  text-decoration: inherit;
+
+/* header start */
+
+header a {
+  text-decoration: none;
   color: inherit;
-}
-
-a:hover,
-a:focus {
-  color: #2196f3;
-}
-
-button:hover {
-  cursor: pointer;
-}
-
-.btn-studio {
-  padding: 10px 41px;
-  background-color: #2196f3;
-  color: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.875;
-}
-.btn-portfolio {
-  background-color: #f5f4fa;
-  padding: 6px 22px;
-  border: none;
-  font-size: 16px;
-  font-weight: 500;
-  border-radius: 4px;
-  line-height: 1.625;
-}
-
-.btn-portfolio:hover,
-.btn-portfolio:focus {
-  background-color: #2196f3;
-  color: #ffffff;
 }
 
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
-  color: #000000;
+  color: var(--color-studio);
 }
 
-footer .logo {
-  color: #ffffff;
-}
-
-footer p {
-  color: #ffffff;
-}
 .blue-web {
-  color: #2196f3;
+  color: var(--color-text-hover);
 }
 
-h1 {
-  font-weight: 900;
-  color: #ffffff;
-  line-height: 1.4;
+.menu li:hover {
+  color: var(--color-text-hover);
+}
+
+.contact li:hover {
+  color: var(--color-text-hover);
 }
 
 .contact {
-  color: #757575;
+  color: var(--color-gray);
 }
 
-.baner {
-  background-color: #2f303a;
+/* header end */
+
+/* main start */
+
+.baner h1 {
+  font-size: 44px;
+  line-height: 1.4;
+}
+
+.btn-studio {
+  padding: 10px 41px;
+  background-color: var(--color-text-hover);
+  color: var(--color-white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  cursor: pointer;
+}
+
+.lorem-ipsum h3 {
+  font-size: 14px;
+}
+
+.lorem-ipsum p {
+  color: var(--color-gray);
+  line-height: 1.715;
+  font-size: 14px;
+}
+
+.what-we-do h2,
+.team h2 {
+  font-size: 36px;
 }
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--color-lightgray);
+}
+
+.team figure {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--color-white);
 }
 
 .team .name {
-  font-size: 16px;
   font-weight: 500;
 }
 
 .team .job-position {
+  color: var(--color-gray);
+}
+
+.btn-portfolio {
+  background-color: var(--color-lightgray);
+  padding: 6px 22px;
+  border: none;
   font-size: 16px;
-  font-weight: 400;
-  color: #757575;
+  border-radius: 4px;
+  line-height: 1.625;
+  cursor: pointer;
 }
 
-footer {
-  background-color: #2f303a;
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+  background-color: var(--color-text-hover);
+  color: var(--color-white);
 }
 
-h3 {
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.lorem-ipsum p {
-  color: #757575;
-  line-height: 1.7;
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 36px;
-}
-
-li {
-  list-style: none;
+.portfolio-boxes figure {
+  border: 1px solid #eeeeee;
+  background-color: var(--color-white);
 }
 
 .portfolio-title {
@@ -118,25 +125,31 @@ li {
 }
 
 .portfolio-filtr {
-  font-weight: 400;
-  font-size: 16px;
-  color: #757575;
+  color: var(--color-gray);
   line-height: 1.875;
 }
 
-.team figure {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  background-color: #ffffff;
+/*  footer start*/
+
+.footer {
+  background-color: var(--color-background-footer);
 }
 
-.portfolio-boxes figure {
-  border: 1px solid #eeeeee;
-  background-color: #ffffff;
+.footer a {
+  text-decoration: none;
+}
+
+.footer .logo {
+  color: var(--color-white);
+}
+
+.footer p {
+  color: var(--color-white);
 }
 
 address a {
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
 }
+
+/*  footer end*/
