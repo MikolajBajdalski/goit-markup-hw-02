@@ -1,6 +1,6 @@
 :root {
   --color-text-hover: #2196f3;
-  --color-gray: #757575;
+  --color-text-light: #757575;
   --color-text-primary: #212121;
   --color-white: #ffffff;
   --color-lightgray: #f5f4fa;
@@ -15,31 +15,40 @@ body {
 
 /* header start */
 
-header a {
-  text-decoration: none;
-  color: inherit;
-}
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   color: var(--color-studio);
+  text-decoration: none;
+  color: inherit;
 }
 
 .blue-web {
   color: var(--color-text-hover);
 }
 
-.menu li:hover {
-  color: var(--color-text-hover);
+.menu-link {
+  text-decoration: none;
+  color: inherit;
 }
 
-.contact li:hover {
+.menu-link:hover,
+.menu-link:focus {
   color: var(--color-text-hover);
 }
 
 .contact {
-  color: var(--color-gray);
+  color: var(--color-text-light);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--color-text-hover);
+}
+
+.contact-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* header end */
@@ -65,10 +74,11 @@ header a {
 
 .lorem-ipsum h3 {
   font-size: 14px;
+  line-height: 1.17214;
 }
 
 .lorem-ipsum p {
-  color: var(--color-gray);
+  color: var(--color-text-light);
   line-height: 1.715;
   font-size: 14px;
 }
@@ -76,6 +86,7 @@ header a {
 .what-we-do h2,
 .team h2 {
   font-size: 36px;
+  line-height: 1.171945;
 }
 
 .team {
@@ -94,7 +105,7 @@ header a {
 }
 
 .team .job-position {
-  color: var(--color-gray);
+  color: var(--color-text-light);
 }
 
 .btn-portfolio {
@@ -125,7 +136,7 @@ header a {
 }
 
 .portfolio-filtr {
-  color: var(--color-gray);
+  color: var(--color-text-light);
   line-height: 1.875;
 }
 
