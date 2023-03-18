@@ -106,6 +106,7 @@ body {
 
 .team .job-position {
   color: var(--color-text-light);
+  line-height: 1.171875;
 }
 
 .btn-portfolio {
